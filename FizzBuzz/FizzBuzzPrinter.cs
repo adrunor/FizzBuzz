@@ -2,8 +2,8 @@ namespace FizzBuzz;
 
 public class FizzBuzzPrinter
 {
-    public object? Print(int number)
+    public string Print(int number)
     {
-        throw new NotImplementedException();
+        return number.ToString();
     }
 }

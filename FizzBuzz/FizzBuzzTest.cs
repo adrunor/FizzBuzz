@@ -11,6 +11,6 @@ public class FizzBuzzTest
         var fizzBuzz = new FizzBuzzPrinter();
         var value = fizzBuzz.Print(number);
 
-        Assert.Equals("1", value);
+        Assert.AreEqual("1", value);
     }
 }
