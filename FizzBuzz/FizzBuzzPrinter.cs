@@ -10,21 +10,18 @@ public class FizzBuzzPrinter
         
     public string Print(int number)
     {
-        if (IsMultipleOf(number, FizzMultiplier) && IsMultipleOf(number, BuzzMultiplier))
+        string? fizzBuzzValue = null;
+        if (IsMultipleOf(number, FizzMultiplier))
         {
-            return Fizz + Buzz;
+            fizzBuzzValue += Fizz;
         }
         
         if (IsMultipleOf(number, BuzzMultiplier))
         {
-            return Buzz;
+            fizzBuzzValue += Buzz;
         }
-        
-        if (IsMultipleOf(number, FizzMultiplier))
-        {
-            return Fizz;
-        }
-        return number.ToString();
+
+        return fizzBuzzValue ?? number.ToString();
     }
 
     private bool IsMultipleOf(int number, int divider)
