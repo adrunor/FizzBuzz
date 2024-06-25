@@ -38,4 +38,16 @@ public class FizzBuzzTest
         
         Assert.AreEqual("Buzz", value);
     }
+
+    [TestMethod]
+    public void Should_return_fizzbuzz_when_number_is_multiple_of_three_and_five()
+    {
+        var fizzbuzz = new FizzBuzzPrinter();
+
+        const int number = 15;
+
+        var value = fizzbuzz.Print(number);
+        
+        Assert.AreEqual("FizzBuzz", value);
+    }
 }
