@@ -26,4 +26,16 @@ public class FizzBuzzTest
         
         Assert.AreEqual("Fizz", value);
     }
+
+    [TestMethod]
+    public void Should_return_buzz_when_number_is_multiple_of_five()
+    {
+        var fizzBuzz = new FizzBuzzPrinter();
+
+        const int number = 5;
+
+        var value = fizzBuzz.Print(number);
+        
+        Assert.AreEqual("Buzz", value);
+    }
 }
