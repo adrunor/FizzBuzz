@@ -7,6 +7,10 @@ public class FizzBuzzPrinter
         
     public string Print(int number)
     {
+        if (number % FizzMultiplier == 0 && number % BuzzMultiplier == 0)
+        {
+            return "FizzBuzz";
+        }
         if (number % BuzzMultiplier == 0)
         {
             return "Buzz";
