@@ -2,6 +2,9 @@ namespace FizzBuzz;
 
 public class FizzBuzzPrinter
 {
+    private const string Fizz = "Fizz";
+    private const string Buzz = "Buzz";
+    
     private const int FizzMultiplier = 3;
     private const int BuzzMultiplier = 5;
         
@@ -9,15 +12,15 @@ public class FizzBuzzPrinter
     {
         if (number % FizzMultiplier == 0 && number % BuzzMultiplier == 0)
         {
-            return "FizzBuzz";
+            return Fizz + Buzz;
         }
         if (number % BuzzMultiplier == 0)
         {
-            return "Buzz";
+            return Buzz;
         }
         if (number % FizzMultiplier == 0)
         {
-            return "Fizz";
+            return Fizz;
         }
         return number.ToString();
     }
