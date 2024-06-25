@@ -25,6 +25,5 @@ public class FizzBuzzTest
         var value = fizzBuzz.Print(number);
         
         Assert.AreEqual("Fizz", value);
-        
     }
 }
